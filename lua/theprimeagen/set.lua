@@ -1,4 +1,4 @@
-vim.opt.guicursor = "i:ver25"
+vim.opt.guicursor = ""
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -28,4 +28,4 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = ""
 
-vim.opt.cursorline = true
+vim.opt.cursorline = false

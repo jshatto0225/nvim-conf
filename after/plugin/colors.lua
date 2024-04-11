@@ -43,7 +43,7 @@ Group.new('CursorLineNr', colors.yellow, colors.black, styles.NONE, colors.base1
 Group.new('Visual', colors.none, colors.base03, styles.reverse)
 
 function ColorMyPencils(color)
-	color = color or "neosolarized"
+	color = color or "rose-pine"
 	vim.cmd.colorscheme(color)
 
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
