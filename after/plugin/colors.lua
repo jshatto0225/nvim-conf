@@ -43,14 +43,14 @@ Group.new('CursorLineNr', colors.yellow, colors.black, styles.NONE, colors.base1
 Group.new('Visual', colors.none, colors.base03, styles.reverse)
 
 function ColorMyPencils(color)
-	color = color or "rose-pine"
+	color = color or "solarized"
 	vim.cmd.colorscheme(color)
 
-    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-    vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
-    vim.api.nvim_set_hl(0, "NormalSB", { bg = "none" })
-    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-    vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "none" })
+    -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    -- vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+    -- vim.api.nvim_set_hl(0, "NormalSB", { bg = "none" })
+    -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+    -- vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "none" })
 end
 
 ColorMyPencils()

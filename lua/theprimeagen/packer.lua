@@ -44,6 +44,15 @@ return require('packer').startup(function(use)
   })
 
   use {
+    'maxmx03/solarized.nvim',
+    config = function()
+      vim.o.background = 'dark' -- or 'light'
+
+      vim.cmd.colorscheme 'solarized'
+    end
+  }
+
+  use {
 			'nvim-treesitter/nvim-treesitter',
 			run = function()
 				local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
