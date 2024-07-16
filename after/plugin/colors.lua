@@ -1,7 +1,6 @@
 require('rose-pine').setup({
-    disable_background = true,
+    disable_background = false,
     styles = {
-        bold = false,
         italic = false
     }
 })
@@ -30,7 +29,7 @@ require('neosolarized').setup({
     commit_italics = true,
 })
 
-local colorbuddy = require('colorbuddy.init')
+local colorbuddy = require('colorbuddy')
 local Color = colorbuddy.Color
 local colors = colorbuddy.colors
 local Group = colorbuddy.Group
@@ -38,19 +37,21 @@ local goups = colorbuddy.groups
 local styles = colorbuddy.styles
 
 Color.new('black', '#000000')
-Group.new('CursorLine', colors.none, colors.base03, styles.NONE, colors.base1)
+Color.new('back', '#001B26')
+--Group.new('CursorLine', colors.none, colors.base03, styles.NONE, colors.base1)
+Group.new('CursorLine', colors.none, colors.back, styles.NONE, colors.base1)
 Group.new('CursorLineNr', colors.yellow, colors.black, styles.NONE, colors.base1)
 Group.new('Visual', colors.none, colors.base03, styles.reverse)
 
 function ColorMyPencils(color)
-	color = color or "solarized"
+	color = color or "rose-pine-moon"
 	vim.cmd.colorscheme(color)
 
-    -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-    -- vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
-    -- vim.api.nvim_set_hl(0, "NormalSB", { bg = "none" })
-    -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-    -- vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalSB", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+    vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "none" })
 end
 
 ColorMyPencils()
