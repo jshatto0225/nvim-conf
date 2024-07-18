@@ -8,6 +8,7 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 --    vim.cmd("so")
 --end)
 
-vim.api.nvim_set_keymap('n', '<leader>m', ':! cmake --build build<CR>', { noremap = true, silent = false })
-vim.api.nvim_set_keymap('n', '<leader>r', ':!.\\build\\StakEditor\\StakEditor.exe<CR>', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', '<leader>m', ':! .\\scripts\\build.bat<CR>', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', '<leader>r', ':! .\\scripts\\run.bat<CR>', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', '<leader>d', ':! .\\scripts\\debug.bat<CR>', { noremap = true, silent = false })
 
