@@ -7,6 +7,8 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  use 'sainnhe/gruvbox-material'
+
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.5',
 	  -- or                            , branch = '0.1.x',
@@ -82,5 +84,7 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
+
+  use { "CreaturePhil/vim-handmade-hero" }
 end)
 
