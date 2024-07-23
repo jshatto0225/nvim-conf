@@ -88,7 +88,7 @@ Group.new('@lsp.type.enumMember.cpp', colors.aquamarine3)
 Group.new('@keyword.import.cpp', colors.idk)
 Group.new('@keyword.directive.cpp', colors.idk)
 Group.new('@punctuation.special', colors.burlywood3)
-Group.new('MatchParen', colors.aquamarine3, nil, styles.bold)
+Group.new('MatchParen', nil, nil, styles.bold)
 Group.new('CursorLine', nil, colors.line)
 
 function ColorMyPencils(color)
