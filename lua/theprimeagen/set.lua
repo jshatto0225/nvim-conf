@@ -1,4 +1,4 @@
-vim.opt.guicursor="n-v-c:block,i-ci-ve:ver25"
+vim.opt.guicursor="n-v-c:block,i-ci-ve:ver25,o:hor50,r-cr:hor50"
 
 vim.opt.nu = false
 vim.opt.relativenumber = false
@@ -10,7 +10,7 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.wrap = true
+vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -26,7 +26,7 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = ""
+vim.opt.colorcolumn = "80"
 
 --vim.api.nvim_create_autocmd("VimEnter", {
 --    pattern = "*",

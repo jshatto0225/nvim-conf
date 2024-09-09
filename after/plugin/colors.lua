@@ -207,24 +207,24 @@ Group.new('Visual', nil, colors.gray)
 --Group.new('CursorLine', nil, colors.line)
 
 function ColorMyPencils(color)
-	color = color or "colorbuddy"
+	color = color or "rose-pine-moon"
 	vim.cmd.colorscheme(color)
 
-    --vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-    --vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
-    --vim.api.nvim_set_hl(0, "NormalSB", { bg = "none" })
-    --vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-    --vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalSB", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+    vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "none" })
 
-    vim.cmd('hi StatusLine guifg=#696567 guibg=#000000 guisp=#000000 gui=NONE')
-    vim.cmd('hi StatusLineNC guifg=#696567 guibg=#25365a guisp=#25366a gui=NONE')
-    vim.cmd('hi Search guifg=NONE guibg=#754f22 guisp=#754f22 gui=NONE')
-    vim.cmd('hi VertSplit guifg=#ffee68')
-    vim.cmd('hi cSpaceError guibg=#1f0000')
-    vim.cmd[[ match cSpaceError /\s\+$/ ]]
-    vim.cmd('2match Todo /TODO/')
-    vim.cmd('3match Note /NOTE/')
-    vim.cmd('syntax keyword cLabel case')
+    --vim.cmd('hi StatusLine guifg=#696567 guibg=#000000 guisp=#000000 gui=NONE')
+    --vim.cmd('hi StatusLineNC guifg=#696567 guibg=#25365a guisp=#25366a gui=NONE')
+    --vim.cmd('hi Search guifg=NONE guibg=#754f22 guisp=#754f22 gui=NONE')
+    --vim.cmd('hi VertSplit guifg=#ffee68')
+    --vim.cmd('hi cSpaceError guibg=#1f0000')
+    --vim.cmd[[ match cSpaceError /\s\+$/ ]]
+    --vim.cmd('2match Todo /TODO/')
+    --vim.cmd('3match Note /NOTE/')
+    --vim.cmd('syntax keyword cLabel case')
 end
 
 ColorMyPencils()
